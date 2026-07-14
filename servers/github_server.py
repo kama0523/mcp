@@ -9,10 +9,10 @@ load_dotenv()
 
 mcp = FastMCP("GitHub Progress Server")
 
-GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+GITHUB_PERSONAL_ACCESS_TOKEN = os.getenv("GITHUB_PERSONAL_ACCESS_TOKEN")
 
 HEADERS = {
-    "Authorization": f"Bearer {GITHUB_TOKEN}",
+    "Authorization": f"Bearer {GITHUB_PERSONAL_ACCESS_TOKEN}",
     "Accept": "application/vnd.github+json",
 }
 
